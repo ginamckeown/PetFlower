@@ -189,7 +189,9 @@ class Health {
       || rainAmount() > totalHealth * overFactor * 1.3) { // checking for health too low and too high
       textSize(50);
       fill(150, 30, 10);
-      text("Game Over!", 180, 300);
+      textAlign(CENTER);
+      text("Game Over!", width / 2, height / 2);
+      textAlign(CORNER);
       noLoop();
     }
   }
